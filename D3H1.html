@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--NOTE-->
+
+
+        <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
+        <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
+        <script src="https://unpkg.com/aframe-event-set-component@3.0.3/dist/aframe-event-set-component.min.js"></script>
+    </head>
+    <body>
+        <a-scene embedded arjs>
+            <a-assets>
+                <img id="tree" src="tree.jpg">
+                <img id="wolf" src="wolf.jpg">
+            </a-assets>
+            <a-marker-camera preset="hiro"> 
+                <a-image src="#tree" position="0 0 0.85" rotation="0 0 0"></a-image>
+                <a-image src="#wolf" position="0.20 0 0" rotation="0 0 0"></a-image>
+            </a-marker-camera>
+        </a-scene>
+    </body>
+</html>
